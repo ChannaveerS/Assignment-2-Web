@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="Resources/fevi-p.png">
+    <link rel="stylesheet" href="Graphics.css" />
+  </head>
+  <body>
+    <!-- Menu Setup -->
+    <nav id="desktop-nav">
+        <div class="logo">Channaveer</div>
+        <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Business">Business</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+
+<!--  Hamburger menu setup  -->
+
+    <nav id="hamburger-nav">
+        <div class="logo">Channaveer</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#Business" onclick="toggleMenu()">Business</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- My Profile -->
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="Resources/profile1.jpg" alt="Channaveer picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Channaveer</h1>
+          <p class="section__text__p2">Software Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('Resources/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="Resources/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/'"
+            />
+            <img
+              src="Resources/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="Resources/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>3+ years <br />Software Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="Resources/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.E. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              </div>
+            </div>
+            <div class="text-container">
+                <summary>Summary</summary>
+              <p>
+                 Results-driven Full Stack Developer and automation engineer pursuing master’s degree in software engineering Systems
+                 with over 4 years of experience in software development, automotive technology
+                 & digital transformation for 3DEexperience and CATIA v5 with C++.
+                 Committed to delivering high-quality, efficient solutions within tight deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="Resources/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+    </section>
+
+    <!-- Experience in Table -->
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      
+      <table>
+        <caption> Information</caption>
+        <thead>
+            <tr>
+                <th>Sl No.</th>
+                <th>Skill</th>
+                <th>level</th>
+                <th>Company</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>C++</td>
+                <td>Intermediate</td>
+                <td>KPIT Ltd</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>VB.Net</td>
+                <td>Intermediate</td>
+                <td>KPIT Ltd</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C#</td>
+                <td>Beginner</td>
+                <td>LTTS Ltd</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>HTML</td>
+                <td>Beginner</td>
+                <td>Northeastern</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>CSS</td>
+                <td>Beginner</td>
+                <td>Northeastern</td>
+
+            </tr>
+        </tbody>
+    </table>
+      
+      <img
+        src="Resources/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <h2 class="audiovideoCS">Media!
+    </h2>
+    <section class = "AVD">
+        <h2> </h2>
+        <audio src="Resources/tape1.wav" controls></audio>
+        <h2> </h2>
+        <video controls>
+         <source  src="Resources/samplev.mp4">
+        </video>
+    </section>
+
+        <h2 class="HC">Happy Customers</h2>
+    <div class="customer-container">
+        <div class="cs">
+            <img src="Resources/hc1.jpg" alt="Jet li"  id="customer1-image">
+            <h2>Customer 1</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+        <div class="cs">
+            <img src="Resources/hc2.jpeg" alt="Mark Pedro"  id="customer1-image">
+            <h2>Customer 2</h2>
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="cs">
+            <img src="Resources/hc3.jpeg" alt="Emma Stone"  id="customer1-image">
+            <h2>Customer 2</h2>
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+
+    </div>
+
+    <section class = "Business" id="Business">
+        <div class="form-container">
+            <h2>For Business -</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="YourEmail@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message goes here"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+    </section>
+   
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="Resources/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:channaveras@yahoo.in">channaveras@yahoo.in</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="Resources/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyright &#169; 2023 Channaveer. All Rights Reserved.</p>
+      </footer>
+      
+      <script src="HamburgerToggle.js"></script>
+
+  </body>
+
+</html>
